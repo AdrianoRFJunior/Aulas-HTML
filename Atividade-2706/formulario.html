@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Informações pessoais</legend>
+
+            <label for="nome">Nome completo *</label> <br>
+            <input type="text" name="nome" id="nome" maxlength="200" required> <br>
+
+            <label for="email">Email *</label> <br>
+            <input type="email" name="email" id="email" required> <br>
+
+            <label for="senha">Senha *</label> <br>
+            <input type="password" name="senha" id="senha" required> <br>
+
+            <label for="bio">Conte um pouco sobre você *</label> <br>
+            <textarea type="text" name="bio" id="bio" cols="30" rows="4"></textarea> <br>
+
+            <label for="area">Área de atuação *</label> <br>
+            <select name="area" id="area" required>
+                <option value="fullstack">Full Stack</option>
+                <option value="cloud">Cloud</option>
+                <option value="ambos">Ambos</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <label for="uf">Uf *</label> <br>
+            <input type="text" name="uf" id="uf" maxlength="2" required> <br>
+
+            <label for="cidade">Cidade *</label> <br>
+            <input type="text" name="cidade" id="cidade" required> <br>
+
+            <label for="rua">Rua *</label> <br>
+            <input type="text" name="rua" id="rua" required> <br>
+
+            <label for="numero">Número da residência *</label> <br>
+            <input type="text" name="numero" id="numero" required> <br>
+
+            <label for="cep">CEP *</label> <br>
+            <input type="text" name="cep" id="cep" required> <br>
+        </fieldset>
+
+        <button>Cadastrar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+</body>
+</html>
